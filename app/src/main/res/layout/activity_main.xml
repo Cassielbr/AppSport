@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundooutro"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Passo a Passo"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/edtPassos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Insira a quantidade de passos"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:id="@+id/grupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/curto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curto (0.5 m)"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/medio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médio (0.7 m)" />
+
+        <RadioButton
+            android:id="@+id/longo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longo (1.0 m)" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/correr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você estava correndo?" />
+
+    <Button
+        android:id="@+id/btnCalcularIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calcular IMC" />
+
+    <TextView
+        android:id="@+id/txtResultadoIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calcular Distância" />
+
+    <TextView
+        android:id="@+id/txtR2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnVerHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ver Histórico" />
+</LinearLayout>
